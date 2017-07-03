@@ -8,6 +8,6 @@ sys.path.insert(1, os.path.join(_filepath, _srcdir))
 if sys.version_info[0] == 3:
     import novel_get
     if __name__ == '__main__':
-        novel_get.main(url=sys.argv[1])
+        novel_get.main(url=sys.argv[1], out=sys.argv[2])
 else:
     print("[FATAL] Python 3 is required!")
